@@ -1,0 +1,8 @@
+split('')
+// retorna un array, separa un string segun los caracteres indicados
+
+reverse()
+// invierte las posiciones de los elementos de un array
+
+join('')
+//retorna un string, une los elementos de un array segun los caracteres indicados
