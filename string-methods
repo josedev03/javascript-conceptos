@@ -6,3 +6,13 @@ reverse()
 
 join('')
 //retorna un string, une los elementos de un array segun los caracteres indicados
+
+charAt(posicion)
+// retorna el caracter en la posicion indicada
+"gato".charAt(0);
+>> "g"
+
+String.fromCharcode()
+//metodo estatico, retorna un nuevo string con la representación de los caracteres ingresados como parametros
+String.fromCharCode(65,66,67);
+>> "ABC"
