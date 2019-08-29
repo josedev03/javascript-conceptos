@@ -16,3 +16,23 @@ String.fromCharcode()
 //metodo estatico, retorna un nuevo string con la representación de los caracteres ingresados como parametros
 String.fromCharCode(65,66,67);
 >> "ABC"
+
+******************************************************************************************************
+*******************************************UTILS******************************************************
+
+String.fromCodePoint(num1, ...., numN);
+// metodo estatico, retorna un nuevo string con la representacion de caracteres ingresados como parametros
+String.fromCodePoint(65,66,67);
+>> "ABC"
+
+miCadena.anchor('nombre_anchor')
+// metodo para crear un anchor a partir de un string
+let miCadena = 'texto a visualizar'
+miCadena.anchor('nombre_anchor_html');
+>> <a name="nombre_anchor_html">texto a visualizar</a>
+
+miCadena.big()
+// metodo para formatear y obtener un texto dentro de una etiqueta big
+let miCadena = 'texto a visualizar';
+miCadena.big()
+>> <big>texto a visualizar</big>
