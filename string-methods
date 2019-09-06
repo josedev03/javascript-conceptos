@@ -17,6 +17,16 @@ String.fromCharcode()
 String.fromCharCode(65,66,67);
 >> "ABC"
 
+repeat(nCopias)
+// construye y retorna una nueva cadena con el numero de copias del string desde el cual fue llamado
+"dato".repeat(3);
+>> "datodatodato"
+
+concat(cadena1,cadena2,cadenaN)
+// retorna una nueva cadena uniendo la cadena original (desde el cual fue llamado) a las cadenas que fueron pasadas como parametros
+"frase".concat(" para", " concatenar");
+>> "frase para concatenar"
+
 ******************************************************************************************************
 *******************************************UTILS******************************************************
 
