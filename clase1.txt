@@ -1,0 +1,16 @@
+const miClase = function(){};
+
+miClase.prototype.suma = (a, b)=>{
+  return a + b;
+}
+
+miClase.prototype.resta = (a, b)=>{
+  return a - b;
+}
+
+const operaciones = new miClase();
+const resultado = operaciones.suma(3, 4);
+console.log(resultado);
+
+const resultado2 = operaciones.resta(resultado, 10);
+console.log(resultado2);
