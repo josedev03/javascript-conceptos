@@ -27,6 +27,17 @@ concat(cadena1,cadena2,cadenaN)
 "frase".concat(" para", " concatenar");
 >> "frase para concatenar"
 
+charCodeAt(indice)
+// metodo para obtener el codigo unicode de un caracter
+"gato".charCodeAt(0);
+>> 103
+
+endsWith(string, [indice])
+// valida si un string termina en el string indicado como parametro. opcional se puede pasar un segundo
+parametro para delimitar el string, retorna true/false
+"mi data, mi info".endsWith('fo');
+>> true
+
 ******************************************************************************************************
 *******************************************UTILS******************************************************
 
