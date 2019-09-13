@@ -56,6 +56,23 @@ lastIndexOf(stringToFind, [position])
 "Brave new world".lastIndexOf("w");
 >> 10
 
+localeCompare(stringTocompare, [locales, options)
+// compara el string actual con el pasado por parametro, retornando un valor negativo si el string actual es anterior.
+// si el valor es igual retorna 0, si el valor es posterior retornara un valor positivo
+"adios".localeCompare("adiot");
+>> -1
+"adios".localeCompare("adios");
+>> 0
+"adios".localeCompare("adion");
+>> 1
+
+match
+// retorna un array con todas las ocurrencias de una expresion regular, que esten en el String evaluado, el parametro pasado
+// debe ser una expresion regular
+"toda la data esta aquí".match(/a/g);
+>> [ 'a', 'a', 'a', 'a', 'a', 'a' ]
+
+
 ******************************************************************************************************
 *******************************************UTILS******************************************************
 
