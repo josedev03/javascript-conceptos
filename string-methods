@@ -72,6 +72,23 @@ match
 "toda la data esta aquí".match(/a/g);
 >> [ 'a', 'a', 'a', 'a', 'a', 'a' ]
 
+padEnd(length, [stringToPad)
+// retorna un nuevo string al cual se le agregara al final del string del el segundo parametro (string) tantas veces como sea necesario para completar el
+// tamaño indicado en el primer parametro, si el segundo parametro no se especifica por defecto sera " "
+"mi string".padEnd(15, ".")
+>> "mi string......"
+"mi string".padEnd(15)
+>> "mi string      "
+
+padStart(length, [stringToPad)
+// retorna un nuevo string al cual se le agregara al comiezo del string del el segundo parametro (string) tantas veces como sea necesario para completar el
+// tamaño indicado en el primer parametro, si el segundo parametro no se especifica por defecto sera " "
+"mi string".padStart(15, ".")
+>> "......mi string"
+"mi string".padStart(15)
+>> "      mi string"
+
+
 
 ******************************************************************************************************
 *******************************************UTILS******************************************************
