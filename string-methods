@@ -88,7 +88,18 @@ padStart(length, [stringToPad)
 "mi string".padStart(15)
 >> "      mi string"
 
+replace(regex|subSrt, stringToReplace|function, [flags)
+// retorna un nuevo string al cual se reemplazara el substring o la expresion regular pasada en el primer parametro con el segundo parametro
+// tener cuidado con el tercer parametro ya que no todos los navegadores lo soportan, es mejor crear una expresion regular que ya contenga las banderas
+var regex = new RegExp(/\d/, "g");
+"mi perro tiene 23 años y va 2 dias al parque".replace(regex, '..');
+>> "mi perro tiene .... años y va .. dias al parque"
 
+replace(regex)
+// retorna un nuevo string el cual indica la posicion de la primera coincidencia de nuestro string con la regex pasada como parametro
+var regex = new RegExp(23);
+"mi perro tiene 23 años y va 2 dias al parque".search(regex);
+>> 15
 
 ******************************************************************************************************
 *******************************************UTILS******************************************************
