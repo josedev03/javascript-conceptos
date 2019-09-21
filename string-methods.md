@@ -52,8 +52,7 @@ charCodeAt(indice)
 
 endsWith(string, [indice])
 
-// valida si un string termina en el string indicado como parametro. opcional se puede pasar un segundo
-// parametro para delimitar el string, retorna true/false
+// valida si un string termina en el string indicado como parametro. opcional se puede pasar un segundo parametro para delimitar el string, retorna true/false
 ~~~
 "mi data, mi info".endsWith('fo');
 >> true
@@ -62,6 +61,7 @@ endsWith(string, [indice])
 includes(stringToFind, [position])
 
 // busca el string pasado como parametro, el segundo parametro (opcional) el cual se indica la posicion donde empezar a buscar
+
 retorna true or false dependiendo si se encuentra el string (case sensitive)
 ~~~
 "data data info".includes("ta", 5);
@@ -77,16 +77,17 @@ indexOf(stringTofind, [position])
 ~~~
 
 lastIndexOf(stringToFind, [position])
-// retorna la posicion de la ultima ocurrencia con el string pasado como parametro, el segundo parametro (opcional) indica la posicion
-// donde empezar a buscar la coincidencia (case sensitive)
+
+// retorna la posicion de la ultima ocurrencia con el string pasado como parametro, el segundo parametro (opcional) indica la posicion donde empezar a buscar la coincidencia (case sensitive)
 ~~~
 "Brave new world".lastIndexOf("w");
 >> 10
 ~~~
 
 localeCompare(stringTocompare, [locales, options])
+
 // compara el string actual con el pasado por parametro, retornando un valor negativo si el string actual es anterior.
-// si el valor es igual retorna 0, si el valor es posterior retornara un valor positivo
+si el valor es igual retorna 0, si el valor es posterior retornara un valor positivo
 ~~~
 "adios".localeCompare("adiot");
 >> -1
