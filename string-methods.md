@@ -129,7 +129,7 @@ var regex = new RegExp(23);
 ~~~
 
 ******************************************************************************************************
-*******************************************UTILS******************************************************
+**MENOS UTILES**
 
 String.fromCodePoint(num1, ...., numN);
 - metodo estatico, retorna un nuevo string con la representacion de caracteres ingresados como parametros
