@@ -16,7 +16,7 @@ charAt(posicion)
 
 String.fromCharcode()
 
-//metodo estatico, retorna un nuevo string con la representación de los caracteres ingresados como parametros
+- metodo estatico, retorna un nuevo string con la representación de los caracteres ingresados como parametros
 ~~~
 String.fromCharCode(65,66,67);
 >> "ABC"
