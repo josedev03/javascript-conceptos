@@ -1,18 +1,14 @@
 split('')
-
-// retorna un array, separa un string segun los caracteres indicados
+- retorna un array, separa un string segun los caracteres indicados
 
 reverse()
-
-// invierte las posiciones de los elementos de un array
+- invierte las posiciones de los elementos de un array
 
 join('')
-
-//retorna un string, une los elementos de un array segun los caracteres indicados
+- retorna un string, une los elementos de un array segun los caracteres indicados
 
 charAt(posicion)
-
-// retorna el caracter en la posicion indicada
+- retorna el caracter en la posicion indicada
 ~~~
 "gato".charAt(0);
 >> "g"
