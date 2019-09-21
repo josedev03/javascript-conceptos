@@ -135,7 +135,7 @@ var regex = new RegExp(/\d/, "g");
 ~~~
 
 replace(regex)
-// retorna un nuevo string el cual indica la posicion de la primera coincidencia de nuestro string con la regex pasada como parametro
+- retorna un nuevo string el cual indica la posicion de la primera coincidencia de nuestro string con la regex pasada como parametro
 ~~~
 var regex = new RegExp(23);
 "mi perro tiene 23 años y va 2 dias al parque".search(regex);
