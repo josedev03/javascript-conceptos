@@ -1,13 +1,17 @@
 split('')
+
 // retorna un array, separa un string segun los caracteres indicados
 
 reverse()
+
 // invierte las posiciones de los elementos de un array
 
 join('')
+
 //retorna un string, une los elementos de un array segun los caracteres indicados
 
 charAt(posicion)
+
 // retorna el caracter en la posicion indicada
 ~~~
 "gato".charAt(0);
@@ -15,6 +19,7 @@ charAt(posicion)
 ~~~
 
 String.fromCharcode()
+
 //metodo estatico, retorna un nuevo string con la representación de los caracteres ingresados como parametros
 ~~~
 String.fromCharCode(65,66,67);
@@ -22,6 +27,7 @@ String.fromCharCode(65,66,67);
 ~~~
 
 repeat(nCopias)
+
 // construye y retorna una nueva cadena con el numero de copias del string desde el cual fue llamado
 ~~~
 "dato".repeat(3);
@@ -29,6 +35,7 @@ repeat(nCopias)
 ~~~
 
 concat(cadena1,cadena2,cadenaN)
+
 // retorna una nueva cadena uniendo la cadena original (desde el cual fue llamado) a las cadenas que fueron pasadas como parametros
 ~~~
 "frase".concat(" para", " concatenar");
@@ -36,6 +43,7 @@ concat(cadena1,cadena2,cadenaN)
 ~~~
 
 charCodeAt(indice)
+
 // metodo para obtener el codigo unicode de un caracter
 ~~~
 "gato".charCodeAt(0);
@@ -43,6 +51,7 @@ charCodeAt(indice)
 ~~~
 
 endsWith(string, [indice])
+
 // valida si un string termina en el string indicado como parametro. opcional se puede pasar un segundo
 // parametro para delimitar el string, retorna true/false
 ~~~
@@ -51,16 +60,17 @@ endsWith(string, [indice])
 ~~~
 
 includes(stringToFind, [position])
+
 // busca el string pasado como parametro, el segundo parametro (opcional) el cual se indica la posicion donde empezar a buscar
-// retorna true or false dependiendo si se encuentra el string (case sensitive)
+retorna true or false dependiendo si se encuentra el string (case sensitive)
 ~~~
 "data data info".includes("ta", 5);
 >> true
 ~~~
 
 indexOf(stringTofind, [position])
-// retorna la posicion de la primera ocurrencia con el string pasado como parametro, el segundo parametro (opcional) indica la posicion
-// donde empezar a buscar la coincidencia (case sensitive)
+
+// retorna la posicion de la primera ocurrencia con el string pasado como parametro, el segundo parametro (opcional) indica la posicion donde empezar a buscar la coincidencia (case sensitive)
 ~~~
 "Brave new world".indexOf("w");
 >> 8
@@ -74,7 +84,7 @@ lastIndexOf(stringToFind, [position])
 >> 10
 ~~~
 
-localeCompare(stringTocompare, [locales, options)
+localeCompare(stringTocompare, [locales, options])
 // compara el string actual con el pasado por parametro, retornando un valor negativo si el string actual es anterior.
 // si el valor es igual retorna 0, si el valor es posterior retornara un valor positivo
 ~~~
