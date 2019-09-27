@@ -120,14 +120,31 @@ var regex = new RegExp(/\d/, "g");
 >> "mi perro tiene .... años y va .. dias al parque"
 ~~~
 
-replace(regex)
-- retorna un nuevo string el cual indica la posicion de la primera coincidencia de nuestro string con la regex pasada como parametro
+search(regex)
+- retorna el indice el cual indica la posicion de la primera coincidencia de nuestro string con la regex pasada como parametro
 ~~~
 var regex = new RegExp(23);
 "mi perro tiene 23 años y va 2 dias al parque".search(regex);
 >> 15
 ~~~
 
+slice(start, [end])
+- retorna un nuevo string, el cual es la extracción de una sección de una cadena, start: indice basado en 0 del cual comienza la extracción end: indice basado en 0 el cual indica el fin de la extracción
+~~~
+var miCadena = "mi perro tiene 23 años";
+var chunk = miCadena.slice(1,5);
+>> "i pe"
+~~~
+
+starts(stringToFind, [position])
+- retorna true/false, realiza busqueda del string pasado como primer parametro desde la posicion indicada en el segundo parametro
+~~~
+var miCadena = "mi perro tiene 23 años";
+miCadena.startsWith("mi", 3);
+>> false
+miCadena.startsWith("mi");
+>> true
+~~~
 ******************************************************************************************************
 **MENOS UTILES**
 
