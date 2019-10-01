@@ -136,7 +136,7 @@ var chunk = miCadena.slice(1,5);
 >> "i pe"
 ~~~
 
-starts(stringToFind, [position])
+startsWith(stringToFind, [position])
 - retorna true/false, realiza busqueda del string pasado como primer parametro desde la posicion indicada en el segundo parametro
 ~~~
 var miCadena = "mi perro tiene 23 años";
@@ -145,7 +145,16 @@ miCadena.startsWith("mi", 3);
 miCadena.startsWith("mi");
 >> true
 ~~~
-******************************************************************************************************
+
+substring(start, [end])
+- retorna un nuevo string, retorna un chunk de un string  exrtae caracteres desde el indice start hasta el inidce end, start: indica desde que posición crear/cortar el nuevo string. end: indica donde finaliza el nuevo string, si se omite el parametro end se extraera hasta el fin de la cadena
+~~~
+"datos conocidos por el periodico matutino".substring(6, 15)
+>> "conocidos"
+~~~
+
+
+************************************************************************************************************************************
 **MENOS UTILES**
 
 String.fromCodePoint(num1, ...., numN);
@@ -170,3 +179,13 @@ let miCadena = 'texto a visualizar';
 miCadena.big()
 >> <big>texto a visualizar</big>
 ~~~
+
+toLocaleLowerCase()
+toLocaleLowerCase(locale)
+toLocaleLowerCase([locale, locale])
+- retorna un nuevo string el cual toma el string original y lo transforma en minusculas de acuerdo con la localización especificada
+~~~
+ "mi PERRO parlanchin se LLAMA ñoño".toLocaleLowerCase('en-US')
+ >> mi perro parlanchin se llama ñoño
+~~~
+
