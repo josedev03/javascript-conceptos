@@ -153,7 +153,27 @@ substring(start, [end])
 >> "conocidos"
 ~~~
 
+toLowerCase()
+- retorna un nuevo string, devuelve el valor en minisculas de la cadena que hace el llamado
+~~~
+"mi PERRO parlanchin se LLAMA ñoño".toLowerCase()
+ >> "mi perro parlanchin se llama ñoño"
+~~~
 
+toString()
+- retorna un nuevo string, devuelve una cadena que representa al objeto que hace el llamado
+~~~
+var a = 101520;
+a.toString();
+>> "101520";
+~~~
+
+toUpperCase()
+- retorna un nuevo string, devuelve el valor en mayusculas de la cadena que hace el llamado
+~~~
+"mi PERRO parlanchin se LLAMA ñoño".toUpperCase()
+>> 'MI PERRO PARLANCHIN SE LLAMA ÑOÑO'
+~~~
 ************************************************************************************************************************************
 **MENOS UTILES**
 
@@ -186,6 +206,14 @@ toLocaleLowerCase([locale, locale])
 - retorna un nuevo string el cual toma el string original y lo transforma en minusculas de acuerdo con la localización especificada
 ~~~
  "mi PERRO parlanchin se LLAMA ñoño".toLocaleLowerCase('en-US')
- >> mi perro parlanchin se llama ñoño
+ >> "mi perro parlanchin se llama ñoño"
 ~~~
 
+toLocaleUpperCase()
+toLocaleUpperCase(locale)
+toLocaleUpperCase([locale, locale, locale])
+- retorna un nuevo string el cual toma el string original y lo transforma en mayusculas de acuerdo con la localización especificada
+~~~
+"mi PERRO parlanchin se LLAMA ñoño".toLocaleLowerCase('en-US')
+ >> "MI PERRO PARLANCHIN SE LLAMA ÑOÑO"
+~~~
