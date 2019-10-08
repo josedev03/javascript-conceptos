@@ -174,6 +174,29 @@ toUpperCase()
 "mi PERRO parlanchin se LLAMA ñoño".toUpperCase()
 >> 'MI PERRO PARLANCHIN SE LLAMA ÑOÑO'
 ~~~
+
+trim()
+- retorna un nuevo string, devuelve el srting que realiza el llamado sin espacios al inicio o al final
+~~~
+"  mi PERRO parlanchin se LLAMA ñoño  ".trim()
+>> 'mi PERRO parlanchin se LLAMA ñoño'
+~~~
+
+trimEnd()
+trimRight()
+- retorna un nuevo string, devuelve el string que realiza el llamado sin espacios al final de la cadena
+~~~
+"  mi PERRO parlanchin se LLAMA ñoño  ".trimEnd()
+>> '  mi PERRO parlanchin se LLAMA ñoño'
+~~~
+
+trimStart()
+trimLeft()
+- retorna un nuevo string, devuelve el string que realiza el llamado sin espacios al inicio de la cadena
+~~~
+"  mi PERRO parlanchin se LLAMA ñoño  ".trimStart()
+>> 'mi PERRO parlanchin se LLAMA ñoño  '
+~~~
 ************************************************************************************************************************************
 **MENOS UTILES**
 
