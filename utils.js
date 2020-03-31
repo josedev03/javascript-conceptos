@@ -7,5 +7,5 @@ unique = [...new Set(array)];
 // encontrar el elemento menor en un array
 const dato = Math.min(...array)
 
-encontrar el elemento mayor en un array
+// encontrar el elemento mayor en un array
 const dato = Math.max(...array)
